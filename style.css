@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.top-container {
+    padding: 30px;
+    text-align: center;
+    min-height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+	background: linear-gradient(-45deg, #d57828, #d57828, rgba(35, 165, 213, 0.568), #085f4e);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	margin: 0px;
+  }
+
+  @-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#buttonIcon{
+    margin-left: 10px;
+    margin-right: -10px;
+
+}
+
+.introText {
+    /* background-color: pink; */
+    /* vertical-align: baseline; */
+    align-self: center;
+    
+}
+
+.myNavbar{
+	margin-top:0px;
+	
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.pictures {
+	float:left;
+	margin: 0px 15px 0px 15px;
+}
+
+.aboutSection {
+	float: left;
+}
+
+.skillProgress{
+	width:250px;
+}
+
+.skill{
+	margin-bottom: -15px;
+}

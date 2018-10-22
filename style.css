@@ -94,3 +94,8 @@ body {
 .skill{
 	margin-bottom: -15px;
 }
+
+.projectImage {
+	width: 33.33%;
+	float: left
+}

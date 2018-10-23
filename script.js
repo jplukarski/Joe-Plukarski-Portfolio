@@ -104,4 +104,12 @@ $(document).ready(function () {
         on: 'hover'
     });
 
+    $(".portfolioButton").click(function () {
+        console.log(this.id)
+        $('#virtualHostelModel')
+            .modal('setting', 'transition', "vertical flip")
+            .modal('show')
+            ;
+    })
+
 });

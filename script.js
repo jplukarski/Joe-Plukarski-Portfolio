@@ -106,10 +106,44 @@ $(document).ready(function () {
 
     $(".portfolioButton").click(function () {
         console.log(this.id)
-        $('#virtualHostelModel')
-            .modal('setting', 'transition', "vertical flip")
-            .modal('show')
-            ;
+
+        switch (this.id) {
+            case "virtualHostel":
+                $('#virtualHostelModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+            case "campaignQuery":
+                $('#campaignQueryModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+            case "nprScraper":
+                $('#nprScraperModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+            case "dessertGif":
+                $('#dessertGifModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+            case "friendFinder":
+                $('#friendFinderModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+            case "rateIt":
+                $('#rateItModel')
+                    .modal('setting', 'transition', "vertical flip")
+                    .modal('show');
+                break;
+
+        }
+
+        // if (this.id === "virtualHostel") {
+        // } 
+
     })
 
 });

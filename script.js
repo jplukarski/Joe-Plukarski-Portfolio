@@ -1,3 +1,4 @@
+// Start code to stick navbar when its scrolled to the top by either scrolling or clicking the button, and make the intial window that color fade thing
 window.onscroll = function () { myFunction() };
 function myFunction() {
     var mn = $('.myNavbar'),
@@ -55,16 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 });
 
-$(document).ready(function () {
-    $(".introButton").hover(function () {
-        console.log("We out here")
-        $("#buttonIcon").attr("class", "angle double down icon")
-    },
-        function () {
-            $("#buttonIcon").attr("class", "angle double right icon")
-        }
-    )
-})
 
 $(document).ready(function () {
     $(".introButton").click(function () {
@@ -75,8 +66,20 @@ $(document).ready(function () {
 
 })
 
+$(document).ready(function () {
+    $(".introButton").hover(function () {
+        console.log("We out here")
+        $("#buttonIcon").attr("class", "angle double down icon")
+    },
+        function () {
+            $("#buttonIcon").attr("class", "angle double right icon")
+        }
+    )
+})
+// End page intoduction code
 
 
+// Start code to update tab highlightin navbar on click
 $(document).ready(function () {
     $(".navItem").click(function () {
         for (i = 0; i < this.parentElement.childElementCount; i++) {
@@ -85,6 +88,7 @@ $(document).ready(function () {
         $(this).attr("class", "item active navItem")
     })
 })
+// Start code to update tab highlightin navbar on click
 
 
 
@@ -92,6 +96,12 @@ $(document).ready(function () {
     $('.special.cards .image').dimmer({
         on: 'hover'
     });
+
     $('.skillProgress').progress();
+
+
+    $('.projectImage .image').dimmer({
+        on: 'hover'
+    });
 
 });

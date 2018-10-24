@@ -69,13 +69,11 @@ body {
 }
 
 .myNavbar{
-	margin-top:0px;
 	
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+.band{
+	opacity: .99;
 }
 
 .pictures {

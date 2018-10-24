@@ -3,7 +3,7 @@ window.onscroll = function () { myFunction() };
 function myFunction() {
     var mn = $('.myNavbar'),
         core = $('.wrapper').eq(0),
-        mns = 'fixed',
+        mns = 'fixed sticky',
         bit, hdr;
 
     $(window).resize(function () {

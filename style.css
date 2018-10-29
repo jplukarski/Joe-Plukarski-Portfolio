@@ -4,7 +4,6 @@ body {
   }
 
 .top-container {
-    padding: 30px;
     text-align: center;
     min-height: 100vh;
     font-family: "Roboto Condensed", sans-serif;
@@ -16,7 +15,6 @@ body {
     display: flex;
     align-items: center;
 	justify-content: center;
-	margin: 0px;
   }
 
   @-webkit-keyframes Gradient {
@@ -61,36 +59,21 @@ body {
 
 }
 
-.introText {
-    /* background-color: pink; */
-    /* vertical-align: baseline; */
-    align-self: center;
+/* .introText {
     
-}
-/* 
-.myNavbar{
-	
+    
 } */
+
+.myNavbar{
+	margin-top: 0px !important;	
+}
 
 .band{
 	opacity: .99;
 }
 
 .pictures {
-	float:left;
 	margin: 0px 15px 0px 15px;
-}
-
-.aboutSection {
-	float: left;
-}
-
-.skillProgress{
-	width:250px;
-}
-
-.skill{
-	margin-bottom: -15px;
 }
 
 .projectImage {

@@ -97,8 +97,6 @@ $(document).ready(function () {
         on: 'hover'
     });
 
-    $('.skillProgress').progress();
-
 
     $('.projectImage .image').dimmer({
         on: 'hover'

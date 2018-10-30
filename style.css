@@ -1,13 +1,14 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
 .top-container {
     text-align: center;
     min-height: 100vh;
-    font-family: "Roboto Condensed", sans-serif;
-	background: linear-gradient(-45deg, #d57828, #d57828, rgba(35, 165, 213, 0.568), #085f4e);
+	/* Old colorscheme: */
+	background: linear-gradient(-135deg, black, rgb(31, 4, 31), rgba(35, 165, 213, 0.568), #dd891c);
+	/* ---------------- */
+	/* background: linear-gradient(-45deg, black, grey); */
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -15,6 +16,7 @@ body {
     display: flex;
     align-items: center;
 	justify-content: center;
+
   }
 
   @-webkit-keyframes Gradient {

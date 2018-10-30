@@ -63,10 +63,6 @@ $(document).ready(function () {
             scrollTop: $("#myHeader").offset().top
         }, 900);
     });
-
-})
-
-$(document).ready(function () {
     $(".introButton").hover(function () {
         console.log("We out here")
         $("#buttonIcon").attr("class", "angle double down icon")
@@ -75,24 +71,18 @@ $(document).ready(function () {
             $("#buttonIcon").attr("class", "angle double right icon")
         }
     )
-})
-// End page intoduction code
+    // End page intoduction code
 
 
-// Start code to update tab highlightin navbar on click
-$(document).ready(function () {
+    // Start code to update tab highlightin navbar on click
     $(".navItem").click(function () {
         for (i = 0; i < this.parentElement.childElementCount; i++) {
             $(this.parentElement.children[i]).attr("class", "item navItem")
         };
         $(this).attr("class", "item active navItem")
     })
-})
-// Start code to update tab highlightin navbar on click
+    // End code to update tab highlightin navbar on click
 
-
-
-$(document).ready(function () {
     $('.special.cards .image').dimmer({
         on: 'hover'
     });
@@ -136,13 +126,19 @@ $(document).ready(function () {
                     .modal('setting', 'transition', "vertical flip")
                     .modal('show');
                 break;
-
         }
-
-        // if (this.id === "virtualHostel") {
-        // } 
-
     })
 
+    $("#aboutTab").click(function () {
+        $('html,body').animate({ scrollTop: $("#aboutHeader").offset().top - 50 }, 500);
+    })
 
-});
+    $("#portfolioTab").click(function () {
+        $('html,body').animate({ scrollTop: $("#portfolioHeader").offset().top - 50 }, 500);
+    })
+
+    $("#contactTab").click(function () {
+        $('html,body').animate({ scrollTop: $("#contactHeader").offset().top - 50 }, 500);
+    })
+
+})

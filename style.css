@@ -56,13 +56,7 @@ body {
 #buttonIcon{
     margin-left: 10px;
     margin-right: -10px;
-
 }
-
-/* .introText {
-    
-    
-} */
 
 .myNavbar{
 	margin-top: 0px !important;	
@@ -79,20 +73,27 @@ body {
 .projectImage {
 	width: 33.33%;
 	float: left;
-	
 }
 
 .location{
 	margin-left: 15px;
-	
 }
 
 .bio {
-	font-size: 18px;
-	
+	font-size: 18px;	
 }
 
 .profilePic{
 	float:left;
 	margin-right: 25px;
+}
+
+.aboutMe {
+	margin-top: 100px !important;
+	margin-bottom: 100px !important;
+}
+
+.skillThumbnail{
+	float: left;
+	margin-right: 5px;
 }

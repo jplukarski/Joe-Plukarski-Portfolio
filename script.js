@@ -80,6 +80,22 @@ $(document).ready(function () {
             $(this.parentElement.children[i]).attr("class", "item navItem")
         };
         $(this).attr("class", "item active navItem")
+
+        switch (this.id) {
+            case "aboutTab":
+                $('html,body').animate({ scrollTop: $("#aboutHeader").offset().top - 50 }, 500);
+                break;
+            case "portfolioTab":
+                $('html,body').animate({ scrollTop: $("#portfolioHeader").offset().top - 50 }, 500);
+                break;
+            case "contactTab":
+                $('html,body').animate({ scrollTop: $("#contactHeader").offset().top - 50 }, 500);
+                break;
+            case "homeTab":
+                $('html,body').animate({ scrollTop: $(".top-container").offset().top }, 500);
+                break;
+        }
+
     })
     // End code to update tab highlightin navbar on click
 
@@ -129,16 +145,5 @@ $(document).ready(function () {
         }
     })
 
-    $("#aboutTab").click(function () {
-        $('html,body').animate({ scrollTop: $("#aboutHeader").offset().top - 50 }, 500);
-    })
-
-    $("#portfolioTab").click(function () {
-        $('html,body').animate({ scrollTop: $("#portfolioHeader").offset().top - 50 }, 500);
-    })
-
-    $("#contactTab").click(function () {
-        $('html,body').animate({ scrollTop: $("#contactHeader").offset().top - 50 }, 500);
-    })
 
 })

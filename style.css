@@ -81,3 +81,18 @@ body {
 	float: left;
 	
 }
+
+.location{
+	margin-left: 15px;
+	
+}
+
+.bio {
+	font-size: 18px;
+	
+}
+
+.profilePic{
+	float:left;
+	margin-right: 25px;
+}

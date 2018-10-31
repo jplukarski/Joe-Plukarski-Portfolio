@@ -145,5 +145,20 @@ $(document).ready(function () {
         }
     })
 
+    $(window).on('scroll', function () {
+        $('.target').each(function () {
+
+            console.log("Window: " + $(window).scrollTop())
+            console.log("This: " + $(this).position().top)
+
+            if ($(window).scrollTop() >= $(this).position().top) {
+
+
+                var id = $(this).attr('id');
+                $('#nav nav a').removeClass('active');
+                $('#nav nav a[href=#' + id + ']').addClass('active');
+            }
+        });
+    });
 
 })

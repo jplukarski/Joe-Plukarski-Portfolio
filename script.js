@@ -1,63 +1,7 @@
-// Start code to stick navbar when its scrolled to the top by either scrolling or clicking the button, and make the intial window that color fade thing
-// window.onscroll = function () { myFunction() };
-// function myFunction() {
-//     var mn = $('.myNavbar'),
-//         core = $('.wrapper').eq(0),
-//         mns = 'fixed sticky',
-//         bit, hdr;
-
-//     $(window).resize(function () {
-
-//         bit = mn.outerHeight();
-//         hdr = $('.top-container').outerHeight();
-//     })
-//         .resize().scroll(function () {
-
-//             if ($(this).scrollTop() > hdr) {
-//                 mn.addClass(mns);
-//                 core.css('margin-top', bit);
-//             } else {
-//                 mn.removeClass(mns);
-//                 core.attr('style', '');
-//             }
-//         })
-//         .on('load', function () {
-
-//             $(this).scroll();
-//         });
-// }
-
-// document.addEventListener('DOMContentLoaded', function () {
-
-//     var mn = $('.myNavbar'),
-//         core = $('.band').eq(0),
-//         fix = core.attr('style') || '',
-//         mns = 'page-head-scrolled',
-//         bit, hdr;
-
-//     $(window).resize(function () {
-
-//         bit = mn.outerHeight();
-//         hdr = $('.top-container').outerHeight();
-//     })
-//         .resize().scroll(function () {
-
-//             if ($(this).scrollTop() > hdr) {
-//                 mn.addClass(mns);
-//                 core.css('margin-top', bit);
-//             } else {
-//                 mn.removeClass(mns);
-//                 core.attr('style', fix);
-//             }
-//         })
-//         .on('load', function () {
-
-//             $(this).scroll();
-//         });
-// });
-
-
 $(document).ready(function () {
+
+    // Navbar appears and disapears based on where user is in the window
+    // __________________________________________________________________
     $('.top-container')
         .visibility({
             once: false,
@@ -68,7 +12,10 @@ $(document).ready(function () {
                 $('.fixed.menu').transition('fade out');
             }
         });
+    // __________________________________________________________________
 
+    // Clicking the button in the Home section scrolls down to the about me section
+    // __________________________________________________________________
     $(".introButton").click(function () {
         $('html,body').animate({
             scrollTop: $("#scrollTarget").offset().top
@@ -82,10 +29,10 @@ $(document).ready(function () {
             $("#buttonIcon").attr("class", "angle double right icon")
         }
     )
-    // End page intoduction code
+    // __________________________________________________________________
 
-
-    // Start code to update tab highlightin navbar on click
+    // Navbar Tabs highlight/unhighlight when you click them. The page also will move to the section you clicked
+    // ______________________________________________________________________________________________________
     $(".navItem").click(function () {
         for (i = 0; i < this.parentElement.childElementCount; i++) {
             $(this.parentElement.children[i]).attr("class", "item navItem")
@@ -106,15 +53,11 @@ $(document).ready(function () {
                 $('html,body').animate({ scrollTop: $(".top-container").offset().top }, 500);
                 break;
         }
-
     })
-    // End code to update tab highlightin navbar on click
+    // ______________________________________________________________________________________________________
 
-    $('.special.cards .image').dimmer({
-        on: 'hover'
-    });
-
-
+    // Project Image will blur and reveal "See more" button on hover. Clicking that "see more" button reveals a modal with more information on the project
+    // __________________________________________________________________    
     $('.projectImage .image').dimmer({
         on: 'hover'
     });
@@ -155,7 +98,10 @@ $(document).ready(function () {
                 break;
         }
     })
+    // __________________________________________________________________
 
+    // Scrolling through the different sections will update the navbar
+    // __________________________________________________________________
     $(window).on('scroll', function () {
         $('.target').each(function () {
 
@@ -165,11 +111,13 @@ $(document).ready(function () {
             if ($(window).scrollTop() >= $(this).position().top) {
 
 
-                var id = $(this).attr('id');
-                $('#nav nav a').removeClass('active');
-                $('#nav nav a[href=#' + id + ']').addClass('active');
+                // var id = $(this).attr('id');
+                // $('#nav nav a').removeClass('active');
+                // $('#nav nav a[href=#' + id + ']').addClass('active');
             }
         });
     });
+    // __________________________________________________________________
+
 
 })

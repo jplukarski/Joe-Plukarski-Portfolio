@@ -1,66 +1,77 @@
 // Start code to stick navbar when its scrolled to the top by either scrolling or clicking the button, and make the intial window that color fade thing
-window.onscroll = function () { myFunction() };
-function myFunction() {
-    var mn = $('.myNavbar'),
-        core = $('.wrapper').eq(0),
-        mns = 'fixed sticky',
-        bit, hdr;
+// window.onscroll = function () { myFunction() };
+// function myFunction() {
+//     var mn = $('.myNavbar'),
+//         core = $('.wrapper').eq(0),
+//         mns = 'fixed sticky',
+//         bit, hdr;
 
-    $(window).resize(function () {
+//     $(window).resize(function () {
 
-        bit = mn.outerHeight();
-        hdr = $('.top-container').outerHeight();
-    })
-        .resize().scroll(function () {
+//         bit = mn.outerHeight();
+//         hdr = $('.top-container').outerHeight();
+//     })
+//         .resize().scroll(function () {
 
-            if ($(this).scrollTop() > hdr) {
-                mn.addClass(mns);
-                core.css('margin-top', bit);
-            } else {
-                mn.removeClass(mns);
-                core.attr('style', '');
-            }
-        })
-        .on('load', function () {
+//             if ($(this).scrollTop() > hdr) {
+//                 mn.addClass(mns);
+//                 core.css('margin-top', bit);
+//             } else {
+//                 mn.removeClass(mns);
+//                 core.attr('style', '');
+//             }
+//         })
+//         .on('load', function () {
 
-            $(this).scroll();
-        });
-}
+//             $(this).scroll();
+//         });
+// }
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
 
-    var mn = $('.myNavbar'),
-        core = $('.band').eq(0),
-        fix = core.attr('style') || '',
-        mns = 'page-head-scrolled',
-        bit, hdr;
+//     var mn = $('.myNavbar'),
+//         core = $('.band').eq(0),
+//         fix = core.attr('style') || '',
+//         mns = 'page-head-scrolled',
+//         bit, hdr;
 
-    $(window).resize(function () {
+//     $(window).resize(function () {
 
-        bit = mn.outerHeight();
-        hdr = $('.top-container').outerHeight();
-    })
-        .resize().scroll(function () {
+//         bit = mn.outerHeight();
+//         hdr = $('.top-container').outerHeight();
+//     })
+//         .resize().scroll(function () {
 
-            if ($(this).scrollTop() > hdr) {
-                mn.addClass(mns);
-                core.css('margin-top', bit);
-            } else {
-                mn.removeClass(mns);
-                core.attr('style', fix);
-            }
-        })
-        .on('load', function () {
+//             if ($(this).scrollTop() > hdr) {
+//                 mn.addClass(mns);
+//                 core.css('margin-top', bit);
+//             } else {
+//                 mn.removeClass(mns);
+//                 core.attr('style', fix);
+//             }
+//         })
+//         .on('load', function () {
 
-            $(this).scroll();
-        });
-});
+//             $(this).scroll();
+//         });
+// });
 
 
 $(document).ready(function () {
+    $('.top-container')
+        .visibility({
+            once: false,
+            onBottomPassed: function () {
+                $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+                $('.fixed.menu').transition('fade out');
+            }
+        });
+
     $(".introButton").click(function () {
         $('html,body').animate({
-            scrollTop: $("#myHeader").offset().top
+            scrollTop: $("#scrollTarget").offset().top
         }, 900);
     });
     $(".introButton").hover(function () {

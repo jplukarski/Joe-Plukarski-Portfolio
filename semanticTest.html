@@ -26,14 +26,8 @@
                         onBottomPassedReverse: function () {
                             $('.fixed.menu').transition('fade out');
                         }
-                    })
-                    ;
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item')
-                    ;
-            })
-            ;
+                    });
+            });
     </script>
 
 
@@ -143,7 +137,7 @@
 
 <body>
 
-    <div class="ui large top fixed hidden menu" id="myHeader">
+    <div class="ui large top inverted fixed hidden menu" id="myHeader">
         <div class="ui container">
             <a class="active item navItem">About</a>
             <a class="item navItem">Portfolio</a>

@@ -103,17 +103,17 @@ $(document).ready(function () {
     // Scrolling through the different sections will update the navbar
     // __________________________________________________________________
     $(window).on('scroll', function () {
-        $('.target').each(function () {
-
-            console.log("Window: " + $(window).scrollTop())
-            console.log("This: " + $(this).position().top)
-
-            if ($(window).scrollTop() >= $(this).position().top) {
+        $('.headerTarget').each(function () {
 
 
-                // var id = $(this).attr('id');
-                // $('#nav nav a').removeClass('active');
-                // $('#nav nav a[href=#' + id + ']').addClass('active');
+            var windowLocation = $(window).scrollTop();
+            var headerLocation = $(this).position().top
+
+            if (600 > windowLocation && windowLocation > 558) {
+                // console.log("Window: " + windowLocation)
+                // console.log("This: " + headerLocation)
+                // console.log(this)
+                console.log(headerLocation)
             }
         });
     });

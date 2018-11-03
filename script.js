@@ -18,7 +18,7 @@ $(document).ready(function () {
     // __________________________________________________________________
     $(".introButton").click(function () {
         $('html,body').animate({
-            scrollTop: $("#scrollTarget").offset().top
+            scrollTop: $("#scrollTarget").offset().top - 10
         }, 900);
     });
     $(".introButton").hover(function () {

@@ -2,7 +2,7 @@ body {
     margin: 0;
   }
 
-.top-container {
+#top-container {
     text-align: center;
     min-height: 100vh;
 	/* Old colorscheme: */

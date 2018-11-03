@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     // Navbar appears and disapears based on where user is in the window
     // __________________________________________________________________
-    $('.top-container')
+    $('#top-container')
         .visibility({
             once: false,
             onBottomPassed: function () {
@@ -30,31 +30,6 @@ $(document).ready(function () {
         }
     )
     // __________________________________________________________________
-
-    // Navbar Tabs highlight/unhighlight when you click them. The page also will move to the section you clicked
-    // ______________________________________________________________________________________________________
-    $(".navItem").click(function () {
-        for (i = 0; i < this.parentElement.childElementCount; i++) {
-            $(this.parentElement.children[i]).attr("class", "item navItem")
-        };
-        $(this).attr("class", "item active navItem")
-
-        switch (this.id) {
-            case "aboutTab":
-                $('html,body').animate({ scrollTop: $("#aboutHeader").offset().top - 50 }, 500);
-                break;
-            case "portfolioTab":
-                $('html,body').animate({ scrollTop: $("#portfolioHeader").offset().top - 50 }, 500);
-                break;
-            case "contactTab":
-                $('html,body').animate({ scrollTop: $("#contactHeader").offset().top - 50 }, 500);
-                break;
-            case "homeTab":
-                $('html,body').animate({ scrollTop: $(".top-container").offset().top }, 500);
-                break;
-        }
-    })
-    // ______________________________________________________________________________________________________
 
     // Project Image will blur and reveal "See more" button on hover. Clicking that "see more" button reveals a modal with more information on the project
     // __________________________________________________________________    
@@ -100,24 +75,81 @@ $(document).ready(function () {
     })
     // __________________________________________________________________
 
-    // Scrolling through the different sections will update the navbar
-    // __________________________________________________________________
-    $(window).on('scroll', function () {
-        $('.headerTarget').each(function () {
 
 
-            var windowLocation = $(window).scrollTop();
-            var headerLocation = $(this).position().top
+    // Navbar Tabs highlight/unhighlight when you click and
+    // ______________________________________________________________________________________________________
+    $(".navItem").click(function () {
+        for (i = 0; i < this.parentElement.childElementCount; i++) {
+            $(this.parentElement.children[i]).attr("class", "item navItem")
+        };
+        $(this).attr("class", "item active navItem")
 
-            if (600 > windowLocation && windowLocation > 558) {
-                // console.log("Window: " + windowLocation)
-                // console.log("This: " + headerLocation)
-                // console.log(this)
-                console.log(headerLocation)
-            }
+        // Old code that scrolled page to the section before hrefs were added
+        // switch (this.id) {
+        //     case "aboutTab":
+        //         $('html,body').animate({ scrollTop: $("#aboutHeader").offset().top - 50 }, 500);
+        //         break;
+        //     case "portfolioTab":
+        //         $('html,body').animate({ scrollTop: $("#portfolioHeader").offset().top - 50 }, 500);
+        //         break;
+        //     case "contactTab":
+        //         $('html,body').animate({ scrollTop: $("#contactHeader").offset().top - 50 }, 500);
+        //         break;
+        //     case "homeTab":
+        //         $('html,body').animate({ scrollTop: $(".top-container").offset().top }, 500);
+        //         break;
+        // }
+
+    })
+    // Cache selectors
+    var lastId,
+        topMenu = $("#myHeader"),
+        topMenuHeight = topMenu.outerHeight() + 10,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
         });
-    });
-    // __________________________________________________________________
 
+    // Bind click handler to menu items
+    // so we can get a fancy scroll animation
+    menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+    });
+
+    // Bind to scroll
+    $(window).scroll(function () {
+
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
+
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            var currentSection = menuItems.filter("[href='#" + id + "']")
+            console.log(currentSection)
+            currentSection.parent().children().removeClass("active")
+            currentSection.addClass("active");
+        }
+    });
+
+
+    // ______________________________________________________________________________________________________
 
 })

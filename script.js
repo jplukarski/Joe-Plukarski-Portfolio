@@ -169,7 +169,13 @@ $(document).ready(function () {
         var email = $("#email").text();
         console.log(email);
         copyToClip(email);
+
     })
+
+    $("#myEmail").popup({
+        popup: $('.custom.popup'),
+        on: 'click'
+    });
     // ______________________________________________________________________________________________________
 
 })

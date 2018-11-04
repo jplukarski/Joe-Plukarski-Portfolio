@@ -143,13 +143,34 @@ $(document).ready(function () {
             lastId = id;
             // Set/remove active class
             var currentSection = menuItems.filter("[href='#" + id + "']")
-            console.log(currentSection)
+            // console.log(currentSection)
             currentSection.parent().children().removeClass("active")
             currentSection.addClass("active");
         }
     });
+    // ______________________________________________________________________________________________________
 
+    // Hitting the copy button copies your email address and related animations
+    // ______________________________________________________________________________________________________
 
+    function copyToClip(str) {
+        function listener(e) {
+            e.clipboardData.setData("text/html", str);
+            e.clipboardData.setData("text/plain", str);
+            e.preventDefault();
+        }
+        document.addEventListener("copy", listener);
+        document.execCommand("copy");
+        document.removeEventListener("copy", listener);
+    };
+
+    $("#myEmail").click(function () {
+        // console.log($("#email").text());
+        var email = $("#email").text();
+        console.log(email);
+        copyToClip(email);
+    })
     // ______________________________________________________________________________________________________
 
 })
+

@@ -98,4 +98,9 @@ body {
 	margin:0px 0px 10px 0px !important;
 	background-color: rgba(123, 150, 160, 0.568) !important;
 	padding: 4em 2em 7em 0em !important;
+	border-radius: 0 !important;
+}
+
+.projectSegment{
+	margin-bottom: 10px !important;
 }

@@ -37,19 +37,12 @@
         <a class="item navItem" id="contactTab" href="#contactHeader">Contact</a>
     </div>
     <!-- End Navbar -->
-
-
-
-
     <div class="band">
-        <div class="ui segment fluid vertical menu headerTarget">
-            <div id="scrollTarget"></div>
-            <br>
-            <br>
-            <h2 class="ui right floated header" id="aboutHeader">About</h2>
-            <div class="ui clearing divider"></div>
-
-
+        <div>
+            <div class="ui message">
+                <div id="scrollTarget"></div>
+                <h1 class="ui right floated header" id="aboutHeader">About</h1>
+            </div>
             <div class="ui vertical stripe segment aboutMe">
                 <div class="ui text container">
                     <!-- Start Profile -->
@@ -131,292 +124,345 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div class="ui segment fluid vertical menu headerTarget">
+        <div>
+            <div class="ui message">
+                <h1 class="ui right floated header" id="portfolioHeader">Portfolio</h1>
+            </div>
+            <div class="ui three column doubling stackable grid container">
+                <div class="row">
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>Virtual Hostel</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="virtualHostel">See
+                                                    More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image" src="./assets/projectPhotos/virtualhostel.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="virtualHostelModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Virtual Hostel
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>Virtual Hostel is a community where travelers can share their experiences.
+                                            Hostel
+                                            bulletin
+                                            boards are a great place to see what a city has to offer, and Virtual
+                                            Hostel
+                                            lets
+                                            browse
+                                            these adventures before you set off on your adventures.</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/react.png"> React
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/mongodb.jpeg"> MongoDb
+                                            <img class="ui avatar image" src="./assets/express.png"> Express.js
+                                        </div>
 
-            <h2 class="ui right floated header" id="portfolioHeader">Portfolio</h2>
-            <div class="ui clearing divider"></div>
-
-
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>Virtual Hostel</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="virtualHostel">See More</div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="http://virtualhostel.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/virtualHostel" target="_blank"> <button
+                                            class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img class="ui image" src="./assets/projectPhotos/virtualhostel.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="virtualHostelModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    Virtual Hostel
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>Virtual Hostel is a community where travelers can share their experiences. Hostel
-                            bulletin
-                            boards are a great place to see what a city has to offer, and Virtual Hostel lets
-                            browse
-                            these adventures before you set off on your adventures.</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/react.png"> React
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/mongodb.jpeg"> MongoDb
-                            <img class="ui avatar image" src="./assets/express.png"> Express.js
-                        </div>
 
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="http://virtualhostel.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/virtualHostel" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
-                </div>
-            </div>
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>Campaign Query</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="campaignQuery">See
+                                                    More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image " src="./assets/projectPhotos/campaignquery.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="campaignQueryModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Campaign Query
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>Using data directly from the Federal Election Commision's API, Campaign
+                                            Query
+                                            looks at
+                                            independent spending by Pacs and SuperPacs and aggregates them by
+                                            candidate.</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
+                                            <img class="ui avatar image" src="./assets/express.png"> Express.js
+                                        </div>
 
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>Campaign Query</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="campaignQuery">See More</div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="http://campaignquery.herokuapp.com/pacs.html" target="_blank"> <button
+                                            class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/campaignQuery" target="_blank"> <button
+                                            class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img class="ui image " src="./assets/projectPhotos/campaignquery.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="campaignQueryModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    Campaign Query
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>Using data directly from the Federal Election Commision's API, Campaign Query looks at
-                            independent spending by Pacs and SuperPacs and aggregates them by candidate.</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
-                            <img class="ui avatar image" src="./assets/express.png"> Express.js
-                        </div>
 
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="http://campaignquery.herokuapp.com/pacs.html" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/campaignQuery" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
-                </div>
-            </div>
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>NPR News Scraper</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="nprScraper">See
+                                                    More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image " src="./assets/projectPhotos/npr.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="nprScraperModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    NPR Scraper
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>NPR Scraper scrapes news articles from NPR's homepage and allows you to save
+                                            them and
+                                            make
+                                            comments on the article.</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                            <img class="ui avatar image" src="./assets/heroku.png"> Heroku
+                                            <img class="ui avatar image" src="./assets/mongodb.jpeg"> MongoDb
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
+                                            <img class="ui avatar image" src="./assets/express.png"> Express.js
+                                        </div>
 
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>NPR News Scraper</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="nprScraper">See More</div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="https://scrape-npr-articles.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/NewsScraper" target="_blank"> <button class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img class="ui image " src="./assets/projectPhotos/npr.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="nprScraperModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    NPR Scraper
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>NPR Scraper scrapes news articles from NPR's homepage and allows you to save them and
-                            make
-                            comments on the article.</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                            <img class="ui avatar image" src="./assets/heroku.png"> Heroku
-                            <img class="ui avatar image" src="./assets/mongodb.jpeg"> MongoDb
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
-                            <img class="ui avatar image" src="./assets/express.png"> Express.js
-                        </div>
 
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="https://scrape-npr-articles.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/NewsScraper" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
-                </div>
-            </div>
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>Dessert Gif Generator</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="dessertGif">See
+                                                    More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image " src="./assets/projectPhotos/dessertgif.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="dessertGifModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Dessert Gif Generator
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>Dessert Gif Generator is a fun tool to search for gifs of your favorite
+                                            desserts. For
+                                            someone with a sweettooth, this could lead to hours of browsing your
+                                            favorite
+                                            cakes and
+                                            pies!</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
+                                        </div>
 
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>Dessert Gif Generator</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="dessertGif">See More</div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="https://jplukarski.github.io/Giphy_API/index.html" target="_blank">
+                                        <button class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/Giphy_API" target="_blank"> <button class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img class="ui image " src="./assets/projectPhotos/dessertgif.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="dessertGifModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    Dessert Gif Generator
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>Dessert Gif Generator is a fun tool to search for gifs of your favorite desserts. For
-                            someone with a sweettooth, this could lead to hours of browsing your favorite cakes and
-                            pies!</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
-                        </div>
 
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="https://jplukarski.github.io/Giphy_API/index.html" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/Giphy_API" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
-                </div>
-            </div>
-
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>Friend Finder</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="friendFinder">See More</div>
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>Friend Finder</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="friendFinder">See
+                                                    More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image " src="./assets/projectPhotos/friendfinder.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="friendFinderModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Friend Finder
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>Friend Finder matches friends that have similar interests. After answering a
+                                            10
+                                            question
+                                            survey, you will be pared with the friend that has the most similar score
+                                            to
+                                            you</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                            <img class="ui avatar image" src="./assets/heroku.png"> Heroku
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/express.png"> Express.js
+                                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="https://fri3nd-finder.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/Friend_Finder" target="_blank"> <button
+                                            class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img class="ui image " src="./assets/projectPhotos/friendfinder.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="friendFinderModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    Friend Finder
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>Friend Finder matches friends that have similar interests. After answering a 10 question
-                            survey, you will be pared with the friend that has the most similar score to you</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                            <img class="ui avatar image" src="./assets/heroku.png"> Heroku
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/express.png"> Express.js
-                            <img class="ui avatar image" src="./assets/node.jpeg"> Node
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="https://fri3nd-finder.herokuapp.com/" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/Friend_Finder" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
-                </div>
-            </div>
 
-            <div class="projectImage">
-                <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                        <div class="content">
-                            <h2>Rate It!</h2>
-                            <div class="center">
-                                <div class="ui inverted button portfolioButton" id="rateIt">See More</div>
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="projectImage">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <h2>Rate It!</h2>
+                                            <div class="center">
+                                                <div class="ui inverted button portfolioButton" id="rateIt">See More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui image " src="./assets/projectPhotos/rateit.jpeg">
+                                </div>
+                            </div>
+                            <div class="ui tiny modal" id="rateItModel">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Rate It!
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        <p>Rate It! is a site where users can rate and comment on randomly generated
+                                            images. Users
+                                            can
+                                            then view the images that were rated to see what is popular and what isn't</p>
+                                        <div class="ui header">Skills Used:</div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/css.png"> CSS
+                                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
+                                        </div>
+                                        <div>
+                                            <img class="ui avatar image" src="./assets/firebase.png"> Firebase
+                                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
+                                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="https://jasonfinney.github.io/apiProject/allreviews.html" target="_blank">
+                                        <button class="ui primary inverted button">Visit
+                                            Page</button></a>
+                                    <a href="https://github.com/jplukarski/Rate-It-" target="_blank"> <button class="ui secondary inverted button">Github
+                                            Repo</button></a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <img class="ui image " src="./assets/projectPhotos/rateit.jpeg">
-                </div>
-            </div>
-            <div class="ui tiny modal" id="rateItModel">
-                <i class="close icon"></i>
-                <div class="header">
-                    Rate It!
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <p>Rate It! is a site where users can rate and comment on randomly generated images. Users
-                            can
-                            then view the images that were rated to see what is popular and what isn't</p>
-                        <div class="ui header">Skills Used:</div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/css.png"> CSS
-                            <img class="ui avatar image" src="./assets/html5.png"> HTML5
-                        </div>
-                        <div>
-                            <img class="ui avatar image" src="./assets/firebase.png"> Firebase
-                            <img class="ui avatar image" src="./assets/javascript.jpeg"> Javascript
-                            <img class="ui avatar image" src="./assets/GitHub-Mark.png"> Github
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <a href="https://jasonfinney.github.io/apiProject/allreviews.html" target="_blank"> <button class="ui primary inverted button">Visit
-                            Page</button></a>
-                    <a href="https://github.com/jplukarski/Rate-It-" target="_blank"> <button class="ui secondary inverted button">Github
-                            Repo</button></a>
+
                 </div>
 
             </div>
-
         </div>
 
-        <div class="ui segment fluid vertical menu headerTarget">
-            <h2 class="ui right floated header" id="contactHeader">Contact</h2>
-            <div class="ui clearing divider"></div>
+        <div>
+            <div class="ui message">
+
+                <h1 class="ui right floated header" id="contactHeader">Contact</h1>
+            </div>
 
             <div class="ui text container">
-
                 <div class="ui raised segment">
 
                     <!-- Contact Me Divider -->
@@ -444,7 +490,7 @@
                                             Copy
                                         </div>
                                         <div class="ui custom popup top left transition hidden">
-                                            Copied!
+                                            Copied Joe's email!
                                         </div>
                                     </div>
                                 </div>
@@ -513,8 +559,8 @@
                 </div>
 
             </div>
-
         </div>
+
 
         <div class="ui inverted vertical footer segment">
             <div class="ui center aligned container">

@@ -8,4 +8,4 @@ Joe Plukarski is a full stack web developer from Chicago, Il. See his his work o
 
 ## Live Link
 
-https://jplukarski.github.io/Joe-Plukarski-Portfolio/index.html
+https://joeplukarski.herokuapp.com/

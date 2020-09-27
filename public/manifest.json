@@ -1,0 +1,8 @@
+{
+  "short_name": "Joe Plukarski",
+  "name": "Joe Plukarski's Web Development Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
